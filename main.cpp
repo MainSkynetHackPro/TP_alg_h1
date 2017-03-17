@@ -1,6 +1,6 @@
 #include <iostream>
 
-#define STEP 5
+#define STEP 100
 
 
 class BinFinder {
@@ -54,9 +54,6 @@ int BinFinder::find(int *array, size_t len) {
             tmp_end = tmp_start + step / 2 + 1;
         }
     }
-
-    if(tmp_end < this->ptr_end)
-        tmp_start++;
 
     return (int) (tmp_start - this->ptr_start);
 }

@@ -73,5 +73,7 @@ int main() {
 
     std::cout << array[element_id];
 
+    delete[] array;
+
     return 0;
 }
